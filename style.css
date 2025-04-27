@@ -1,0 +1,239 @@
+/* Resetando alguns estilos padrões do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Cabeçalho */
+.header {
+  background: linear-gradient(135deg, #003366, #004e92); /* Gradiente para um efeito mais interessante */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 5px solid #ffffff;
+}
+
+.header .logo-img {
+  max-width: 120px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.header .logo-img:hover {
+  transform: scale(1.1); /* Efeito ao passar o mouse sobre o logo */
+}
+
+.header h1 {
+  font-size: 3.5em;
+  margin-top: 10px;
+}
+
+.header .slogan {
+  font-size: 1.3em;
+  font-style: italic;
+  margin-top: 10px;
+  color: #f0f0f0;
+  font-weight: lighter;
+}
+
+/* Filtros de Categorias */
+.filtros {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.filtros:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra ao passar o mouse */
+}
+
+.filtros h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.filtros ul {
+  list-style-type: none;
+}
+
+.filtros ul li {
+  margin-bottom: 10px;
+}
+
+.filtros ul li button {
+  width: 100%;
+  padding: 12px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  text-align: left;
+  border-radius: 25px; /* Botões mais arredondados */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.filtros ul li button:hover {
+  background-color: #002244;
+  transform: scale(1.05); /* Efeito ao passar o mouse */
+}
+
+/* Catálogo de Produtos */
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid responsivo */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Item de produto */
+.item {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.item img:hover {
+  transform: scale(1.1); /* Efeito de zoom na imagem */
+}
+
+.item h2 {
+  font-size: 1.5em;
+  margin: 10px;
+  color: #003366;
+}
+
+.item p {
+  font-size: 1.1em;
+  color: #666;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+.item .preco {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.item button {
+  width: 100%;
+  padding: 12px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.item button:hover {
+  background-color: #002244;
+  transform: scale(1.05); /* Efeito de aumentar o botão ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #003366;
+  color: white;
+  font-size: 0.9em;
+  border-top: 5px solid #ffffff;
+}
+
+/* Contato */
+.contato {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contato h2 {
+  font-size: 2em;
+  color: #003366;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contato p, .contato label {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.contato a {
+  color: #003366;
+  text-decoration: underline;
+}
+
+.contato input, .contato textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contato button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 15px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contato button:hover {
+  background-color: #002244;
+}
+
+/* Responsividade: Ajuste do grid para telas menores */
+
+/* Em telas pequenas, 2 itens por linha */
+@media (max-width: 768px) {
+  .catalogo {
+    grid-template-columns: repeat(2, 1fr); /* 2 produtos por linha */
+  }
+}
+
+/* Em telas muito pequenas (como celulares), 1 item por linha */
+@media (max-width: 480px) {
+  .catalogo {
+    grid-template-columns: 1fr; /* 1 produto por linha */
+  }
+}
